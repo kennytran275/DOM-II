@@ -40,4 +40,24 @@ document.addEventListener("keyup", function (event) {
   event.target.style.backgroundColor = "pink";
 });
 
-//
+// images
+const images = document.querySelectorAll("img");
+
+for (let i = 0; i < images.length; i++) {
+  images[i].addEventListener("click", function (event) {
+    event.target.style.border = "thick solid magenta";
+  });
+}
+
+// h2 titles
+const h2Titles = document.querySelectorAll("h2");
+
+for (let i = 0; i < h2Titles.length; i++) {
+  h2Titles[i].addEventListener("pointerenter", function (event) {
+    event.target.style.fontWeight = "bold";
+  });
+
+  h2Titles[i].addEventListener("pointerleave", function (event) {
+    event.target.style.fontWeight = "normal";
+  });
+}
