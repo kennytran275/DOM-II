@@ -31,4 +31,13 @@ for (let i = 0; i < allPara.length; i++) {
   });
 }
 
+// document
+document.addEventListener("keydown", function (event) {
+  event.target.style.backgroundColor = "gray";
+});
+
+document.addEventListener("keyup", function (event) {
+  event.target.style.backgroundColor = "pink";
+});
+
 //
